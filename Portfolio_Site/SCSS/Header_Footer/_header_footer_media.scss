@@ -7,6 +7,10 @@
         .header_container {
             width: 725px;
             margin: 0 auto;
+
+            .navigation_bar {
+                
+            }
         }
     }
 }
@@ -15,13 +19,27 @@
     header {
         .header_container {
             width: 950px;
-            .navigation_bar {
-                padding-top: 200px;
-                flex-direction: row;
+            align-items: center;
 
-                p {
-                    margin-top: -10px;
-                    order: 0;
+            .navigation_bar {
+                flex-direction: row;
+                justify-content: space-around;
+                height: 475px;
+
+                .blocks {
+                    width: 20%;
+                    // height: 100px;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    flex-direction: column;
+                    border: solid 1px white;
+                    line-height: 100px;
+                    margin: auto 0;
+                }
+
+                .blocks:last-of-type {
+                    display: none;
                 }
             }
         }
@@ -32,6 +50,16 @@
     header {
         .header_container {
             width: 1235px;
+            .navigation_bar {
+
+                .blocks {
+
+                }
+                .blocks:last-of-type {
+                    display: block;
+                }
+
+            }
         }
     }
 }

@@ -4,6 +4,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Amatic SC';
 }
 
 header {
@@ -13,49 +14,49 @@ header {
     background-image: url(../Images/Chalkboard.png);
     border-bottom: 50px solid transparent;
     border-image: url(../Images/Dark_Wood_Frame_X.png) 50 repeat;
-
+    
     .header_container {
+        height: 100%;
+        vertical-align: middle;
+        h1 {
+            margin: 0;
+            padding: 0;
+            text-transform: lowercase;
+            color: white;
+            width: 100%;
+            text-align: center;
+            font-size: 100px;
+            
+        }
         .navigation_bar {
-
             display: flex;
             flex-direction: column;
             justify-content: center;
             width: auto;
-            margin-top: auto;
-            margin-bottom: auto;
-            height: 100%;
-            // border: solid 1px red;
             justify-content: space-between;
 
-            a, p {
-                font-family: 'Amatic SC';
+            .blocks {
+                width: 100%;
                 text-align: center;
-                font-size: 50px;
-                color: white;
-                padding: 25px 0;
+                margin-bottom: 50px;
+
+                a {
+                    text-transform: lowercase;
+                    text-decoration: none;
+                    font-size: 50px;
+                    color: white;
+                }
+    
+                a:hover {
+                    color: $green_hover;
+                    text-decoration: none;
+                }
             }
 
-            a {
-                font-family: 'Amatic SC';
-                text-transform: lowercase;
-                text-decoration: none;
-            }
-
-            a:hover {
-                color: $green_hover;
-                text-decoration: none;
-            }
-
-            p {
-                order: -1;
-                font-family: 'Amatic SC';
-                margin: 0;
-                font-size: 70px;
-            }
         }
     }
 }
 
 
-
+@import "_header_svg.scss";
 @import "_header_footer_media.scss";
