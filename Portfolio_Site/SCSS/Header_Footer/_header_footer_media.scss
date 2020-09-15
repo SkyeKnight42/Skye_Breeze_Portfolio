@@ -1,0 +1,37 @@
+@import "../_variables.scss";
+
+@media (min-width: 750px) {
+    header {
+        // border-top: 50px solid transparent;
+
+        .header_container {
+            width: 725px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width: 975px) {
+    header {
+        .header_container {
+            width: 950px;
+            .navigation_bar {
+                padding-top: 200px;
+                flex-direction: row;
+
+                p {
+                    margin-top: -10px;
+                    order: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1260px) {
+    header {
+        .header_container {
+            width: 1235px;
+        }
+    }
+}
