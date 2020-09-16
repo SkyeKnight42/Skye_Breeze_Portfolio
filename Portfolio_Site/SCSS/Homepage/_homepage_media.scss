@@ -1,0 +1,110 @@
+@import "../_variables.scss";
+
+@media (min-width: 750px) {
+    .about_container {
+        width: 725px;
+        margin: 50px auto;
+
+        h2 {
+            margin-left: 25px;
+            // text-align: left;
+        }
+
+        .about_content {
+            flex-wrap: nowrap;
+            img {
+                width: 40%;
+                margin-right: 15px;
+                
+            }
+            p {
+                border: solid 3px white;
+                width: 60%;
+                margin-top: 0;
+                font-size: 30px;
+                height: 100%;
+            }
+        }
+    }
+
+    .skills_container {
+        width: 725px;
+        margin: 50px auto;
+
+        h2 {
+            // text-align: left;
+            margin-left: 25px;
+        }
+
+        .skill_box {
+            flex-direction: row;
+            justify-content: end;
+            margin: 25px 0 50px;
+            img {
+                width: 40%;
+                height: 100%;
+                margin: 0 25px 0 0 ;
+            } 
+            p {
+                border: solid 3px white;
+                // margin: 65px 0 0 0;
+                width: 60%;
+            }
+        }
+        .skill_box:nth-of-type(2),
+        .skill_box:nth-of-type(4) {
+            flex-direction: row-reverse;
+            img {
+                margin: 0 0 0 25px;
+            }
+        }
+    }
+
+    .previous_work_container {
+        width: 725px;
+        margin: 25px auto;
+    }
+}
+
+@media (min-width: 975px) {
+    .about_container {
+        width: 950px;
+    }
+
+    .skills_container {
+        width: 950px;
+
+        .skill_box {
+            img {
+                width: 20%;
+            }
+            p {
+                width: 80%;
+            }
+        }
+    }
+
+    .previous_work_container {
+        width: 950px;
+    }
+}
+
+@media (min-width: 1260px) {
+    .about_container {
+        width: 1235px;
+        .about_content {
+            p {
+                font-size: 40px;
+                width: 100%;
+            }
+        }
+    }
+
+    .skills_container {
+        width: 1235px;
+    }
+
+    .previous_work_container {
+        width: 1235px;
+    }
+}

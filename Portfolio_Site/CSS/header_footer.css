@@ -4,9 +4,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Amatic SC';
+  height: 5000px;
 }
 
 header {
+  display: block;
   width: 100%;
   height: 600px;
   background: black;
@@ -14,6 +16,7 @@ header {
   border-bottom: 50px solid transparent;
   -o-border-image: url(../Images/Dark_Wood_Frame_X.png) 50 repeat;
      border-image: url(../Images/Dark_Wood_Frame_X.png) 50 repeat;
+  padding: 25px 0;
 }
 
 header .header_container {
@@ -95,7 +98,6 @@ header .header_container .navigation_bar .blocks a:hover {
   }
   header .header_container .navigation_bar .blocks {
     width: 20%;
-    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -106,7 +108,6 @@ header .header_container .navigation_bar .blocks a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    border: solid 1px white;
     line-height: 100px;
     margin: auto 0;
   }

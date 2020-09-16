@@ -1,0 +1,151 @@
+
+
+
+
+
+
+
+@import "../_variables.scss";
+
+body {
+    background: url(../Images/Greyscaled_Icons.png) no-repeat center center fixed, url(../Images/Background_Only_Colour.png) no-repeat center center fixed ;
+    background-size: cover;
+}
+
+.about_container {
+    padding: 0 25px;
+
+    h2 {
+        text-transform: lowercase;
+        font-size: 80px;
+        line-height: 80px;
+        color: $title_pink;
+        margin: 10px 0 20px;
+        padding: 0 0 0 15px;
+        text-align: center;
+    }
+
+    .about_content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        img {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            height: 100%;
+            padding: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        p {
+            font-size: 30px;
+            color: white;
+            background-color: $background_blue;
+            border-radius: 5px;
+            padding: 15px;
+        }
+    }
+}
+
+.skills_container {
+    padding: 0 25px;
+    margin: 25px 0;
+    h2 {
+        text-transform: lowercase;
+        font-size: 80px;
+        line-height: 80px;
+        color: $title_pink;
+        margin: 10px 0 30px;
+        padding: 0 0 0 15px;
+        text-align: center;
+    }
+
+    .skill_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img {
+            width: 200px;
+            margin: 0 auto;
+        } 
+
+        .adobe {
+            border-radius: 10px;
+        }
+
+        p {
+            font-size: 30px;
+            color: white;
+            background-color: $background_blue;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    }
+
+    .skill_box:nth-of-type(2) {
+        img {
+            order: -1;
+        }
+    }
+}
+
+.previous_work_container {
+    padding: 0 25px;
+    margin: 25px 0; 
+
+    h2 {
+        text-transform: lowercase;
+        font-size: 80px;
+        line-height: 80px;
+        color: $title_pink;
+        margin: 10px 0 30px;
+        padding: 0 0 0 15px;
+        text-align: center;
+    }
+
+    .card {
+        border-radius: 20px;
+        justify-content: center;
+        border: solid 3px white;
+        text-align: center;
+        background-color: white;
+        img {
+            height: 250px;
+            margin: 0 auto;
+        }
+        .card_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 0 0 20px 20px;
+            // border: solid 1px red;
+            background-color: $background_blue;
+            h3 {
+                font-size: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: white;
+                margin: 0;
+                padding: 0;
+            }
+
+            h3, p ,a {
+                color: white;
+            }
+
+            p {
+                text-align: left;
+            }
+
+            a {
+                font-size: 24px;
+            }
+        }
+
+
+    }
+}
+
+@import "_homepage_media.scss";
