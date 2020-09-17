@@ -1,9 +1,10 @@
 @import "../_variables.scss";
 
-@media (min-width: 750px) {
+@media (min-width: 768px) {
+
     .about_container {
-        width: 725px;
-        margin: 50px auto;
+        width: 700px;
+        margin: 0 auto;
 
         h2 {
             margin-left: 25px;
@@ -12,45 +13,70 @@
 
         .about_content {
             flex-wrap: nowrap;
+
             img {
                 width: 40%;
-                margin-right: 15px;
-                
+                margin: 0 20px 0 0;
             }
+
             p {
                 border: solid 3px white;
+                margin: auto 0;
                 width: 60%;
-                margin-top: 0;
-                font-size: 30px;
-                height: 100%;
             }
         }
     }
 
     .skills_container {
-        width: 725px;
+        width: 700px;
         margin: 50px auto;
+    }
 
-        h2 {
-            // text-align: left;
-            margin-left: 25px;
-        }
+    .previous_work_container {
+        width: 700px;
+        margin: 0 auto;
+    }
+}
 
-        .skill_box {
-            flex-direction: row;
-            justify-content: end;
-            margin: 25px 0 50px;
-            img {
-                width: 40%;
-                height: 100%;
-                margin: 0 25px 0 0 ;
-            } 
+@media (min-width: 993px) {
+
+    .about_container {
+        width: 925px;
+        .about_content {
             p {
-                border: solid 3px white;
-                // margin: 65px 0 0 0;
-                width: 60%;
+                margin: auto 0;
+            }
+
+            .card {
+                width: 450px
+            }
+            .card::after {
+                width: 450px;
             }
         }
+    }
+
+    .skills_container {
+        width: 925px;
+
+        .skill_box {
+            width: auto;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 35px 0;
+
+            img {
+                width: 20%;
+                height: 100%;
+                margin-right: 25px;
+            }
+            
+            p {
+                border: solid 3px white;
+                width: 80%;
+            }
+        }
+
         .skill_box:nth-of-type(2),
         .skill_box:nth-of-type(4) {
             flex-direction: row-reverse;
@@ -61,50 +87,35 @@
     }
 
     .previous_work_container {
-        width: 725px;
-        margin: 25px auto;
-    }
-}
-
-@media (min-width: 975px) {
-    .about_container {
-        width: 950px;
-    }
-
-    .skills_container {
-        width: 950px;
-
-        .skill_box {
-            img {
-                width: 20%;
-            }
-            p {
-                width: 80%;
-            }
+        width: 925px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .card {
+            width: 400px;
         }
     }
-
-    .previous_work_container {
-        width: 950px;
-    }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1278px) {
+
+    p {
+        font-size: 4rem;
+    }
+
     .about_container {
-        width: 1235px;
+        width: 1210px;
         .about_content {
             p {
-                font-size: 40px;
                 width: 100%;
             }
         }
     }
 
     .skills_container {
-        width: 1235px;
+        width: 1210px;
     }
 
     .previous_work_container {
-        width: 1235px;
+        width: 1210px;
     }
 }

@@ -1,19 +1,34 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
   background: url(../Images/Greyscaled_Icons.png) no-repeat center center fixed, url(../Images/Background_Only_Colour.png) no-repeat center center fixed;
   background-size: cover;
 }
 
+body p, body a, body h2, body h3 {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  font-size: 3rem;
+  color: white;
+}
+
+body h2 {
+  margin: 30px 0;
+}
+
 .about_container {
+  width: auto;
   padding: 0 25px;
 }
 
 .about_container h2 {
   text-transform: lowercase;
-  font-size: 80px;
-  line-height: 80px;
-  color: #e43fdb;
-  margin: 10px 0 20px;
-  padding: 0 0 0 15px;
+  font-size: 8rem;
+  line-height: 8rem;
+  color: white;
   text-align: center;
 }
 
@@ -24,12 +39,13 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0;
 }
 
 .about_container .about_content img {
   width: 100%;
   max-width: 300px;
-  margin: 0 auto;
+  margin: 0 auto 25px;
   height: 100%;
   padding: 10px;
   background-color: white;
@@ -37,25 +53,22 @@ body {
 }
 
 .about_container .about_content p {
-  font-size: 30px;
-  color: white;
-  background-color: #2a90c7;
+  background-color: #0e85c5;
   border-radius: 5px;
-  padding: 15px;
+  padding: 20px;
+  border: solid 3px white;
 }
 
 .skills_container {
   padding: 0 25px;
-  margin: 25px 0;
+  width: auto;
 }
 
 .skills_container h2 {
   text-transform: lowercase;
-  font-size: 80px;
-  line-height: 80px;
-  color: #e43fdb;
-  margin: 10px 0 30px;
-  padding: 0 0 0 15px;
+  font-size: 8rem;
+  line-height: 8rem;
+  color: white;
   text-align: center;
 }
 
@@ -74,7 +87,7 @@ body {
 
 .skills_container .skill_box img {
   width: 200px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .skills_container .skill_box .adobe {
@@ -82,11 +95,13 @@ body {
 }
 
 .skills_container .skill_box p {
-  font-size: 30px;
-  color: white;
-  background-color: #2a90c7;
-  padding: 15px;
+  font-size: 3rem;
+  background-color: #0e85c5;
+  padding: 20px;
   border-radius: 5px;
+  height: 100%;
+  margin: auto 0;
+  border: solid 3px white;
 }
 
 .skills_container .skill_box:nth-of-type(2) img {
@@ -96,18 +111,29 @@ body {
 }
 
 .previous_work_container {
-  padding: 0 25px;
-  margin: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 50px;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px;
 }
 
 .previous_work_container h2 {
   text-transform: lowercase;
-  font-size: 80px;
-  line-height: 80px;
-  color: #e43fdb;
-  margin: 10px 0 30px;
-  padding: 0 0 0 15px;
+  font-size: 8rem;
+  line-height: 8rem;
+  color: white;
   text-align: center;
+  width: 100%;
 }
 
 .previous_work_container .card {
@@ -118,11 +144,51 @@ body {
   border: solid 3px white;
   text-align: center;
   background-color: white;
+  height: 100%;
+  overflow: hidden;
 }
 
 .previous_work_container .card img {
   height: 250px;
+  width: auto;
+  overflow: hidden;
   margin: 0 auto;
+  padding: 0;
+}
+
+.previous_work_container .card .typing_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 253px;
+  row-gap: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.previous_work_container .card .typing_content #typing_effect {
+  color: black;
+  margin: 0;
+  padding: 20px 20px;
+  font-size: 30px;
+}
+
+.previous_work_container .card .typing_content #demo_button {
+  padding: 10px 20px;
+  margin: 10px auto;
+  width: 100px;
+  font-size: 30px;
+  background-color: #32CD32;
+  border-radius: 5px;
+}
+
+.previous_work_container .card .typing_content #demo_button:hover {
+  background-color: #269426;
 }
 
 .previous_work_container .card .card_content {
@@ -133,25 +199,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 20px;
   border-radius: 0 0 20px 20px;
-  background-color: #2a90c7;
+  background-color: #0e85c5;
 }
 
 .previous_work_container .card .card_content h3 {
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 5rem;
+  line-height: 5rem;
   text-align: center;
-  color: white;
-  margin: 0;
+  margin: 0 0 20px;
   padding: 0;
-}
-
-.previous_work_container .card .card_content h3, .previous_work_container .card .card_content p, .previous_work_container .card .card_content a {
-  color: white;
 }
 
 .previous_work_container .card .card_content p {
@@ -159,13 +220,17 @@ body {
 }
 
 .previous_work_container .card .card_content a {
-  font-size: 24px;
+  margin-top: 20px;
 }
 
-@media (min-width: 750px) {
+.previous_work_container .card .card_content a:hover {
+  color: #32CD32;
+}
+
+@media (min-width: 768px) {
   .about_container {
-    width: 725px;
-    margin: 50px auto;
+    width: 700px;
+    margin: 0 auto;
   }
   .about_container h2 {
     margin-left: 25px;
@@ -176,40 +241,58 @@ body {
   }
   .about_container .about_content img {
     width: 40%;
-    margin-right: 15px;
+    margin: 0 20px 0 0;
   }
   .about_container .about_content p {
     border: solid 3px white;
+    margin: auto 0;
     width: 60%;
-    margin-top: 0;
-    font-size: 30px;
-    height: 100%;
   }
   .skills_container {
-    width: 725px;
+    width: 700px;
     margin: 50px auto;
   }
-  .skills_container h2 {
-    margin-left: 25px;
+  .previous_work_container {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 993px) {
+  .about_container {
+    width: 925px;
+  }
+  .about_container .about_content p {
+    margin: auto 0;
+  }
+  .about_container .about_content .card {
+    width: 450px;
+  }
+  .about_container .about_content .card::after {
+    width: 450px;
+  }
+  .skills_container {
+    width: 925px;
   }
   .skills_container .skill_box {
+    width: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    margin: 25px 0 50px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 35px 0;
   }
   .skills_container .skill_box img {
-    width: 40%;
+    width: 20%;
     height: 100%;
-    margin: 0 25px 0 0;
+    margin-right: 25px;
   }
   .skills_container .skill_box p {
     border: solid 3px white;
-    width: 60%;
+    width: 80%;
   }
   .skills_container .skill_box:nth-of-type(2),
   .skills_container .skill_box:nth-of-type(4) {
@@ -223,41 +306,33 @@ body {
     margin: 0 0 0 25px;
   }
   .previous_work_container {
-    width: 725px;
-    margin: 25px auto;
+    width: 925px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .previous_work_container .card {
+    width: 400px;
   }
 }
 
-@media (min-width: 975px) {
+@media (min-width: 1278px) {
+  p {
+    font-size: 4rem;
+  }
   .about_container {
-    width: 950px;
-  }
-  .skills_container {
-    width: 950px;
-  }
-  .skills_container .skill_box img {
-    width: 20%;
-  }
-  .skills_container .skill_box p {
-    width: 80%;
-  }
-  .previous_work_container {
-    width: 950px;
-  }
-}
-
-@media (min-width: 1260px) {
-  .about_container {
-    width: 1235px;
+    width: 1210px;
   }
   .about_container .about_content p {
-    font-size: 40px;
     width: 100%;
   }
   .skills_container {
-    width: 1235px;
+    width: 1210px;
   }
   .previous_work_container {
-    width: 1235px;
+    width: 1210px;
   }
 }
