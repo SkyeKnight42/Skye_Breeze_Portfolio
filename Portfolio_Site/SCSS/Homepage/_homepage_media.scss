@@ -6,11 +6,6 @@
         width: 700px;
         margin: 0 auto;
 
-        h2 {
-            margin-left: 25px;
-            // text-align: left;
-        }
-
         .about_content {
             flex-wrap: nowrap;
 
@@ -64,11 +59,10 @@
             flex-direction: row;
             justify-content: space-between;
             margin: 35px 0;
-
             img {
                 width: 20%;
                 height: 100%;
-                margin-right: 25px;
+                margin: 0 25px 0 0;
             }
             
             p {

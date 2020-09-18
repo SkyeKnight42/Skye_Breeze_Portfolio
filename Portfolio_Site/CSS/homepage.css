@@ -16,20 +16,18 @@ body p, body a, body h2, body h3 {
 }
 
 body h2 {
-  margin: 30px 0;
-}
-
-.about_container {
-  width: auto;
-  padding: 0 25px;
-}
-
-.about_container h2 {
+  width: 100%;
+  display: block;
   text-transform: lowercase;
   font-size: 8rem;
   line-height: 8rem;
   color: white;
   text-align: center;
+}
+
+.about_container {
+  width: auto;
+  padding: 0 25px;
 }
 
 .about_container .about_content {
@@ -40,6 +38,7 @@ body h2 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0;
+  color: solid 1px green;
 }
 
 .about_container .about_content img {
@@ -64,14 +63,6 @@ body h2 {
   width: auto;
 }
 
-.skills_container h2 {
-  text-transform: lowercase;
-  font-size: 8rem;
-  line-height: 8rem;
-  color: white;
-  text-align: center;
-}
-
 .skills_container .skill_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,7 +78,7 @@ body h2 {
 
 .skills_container .skill_box img {
   width: 200px;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
 .skills_container .skill_box .adobe {
@@ -125,15 +116,6 @@ body h2 {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 25px;
-}
-
-.previous_work_container h2 {
-  text-transform: lowercase;
-  font-size: 8rem;
-  line-height: 8rem;
-  color: white;
-  text-align: center;
-  width: 100%;
 }
 
 .previous_work_container .card {
@@ -232,9 +214,6 @@ body h2 {
     width: 700px;
     margin: 0 auto;
   }
-  .about_container h2 {
-    margin-left: 25px;
-  }
   .about_container .about_content {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -288,7 +267,7 @@ body h2 {
   .skills_container .skill_box img {
     width: 20%;
     height: 100%;
-    margin-right: 25px;
+    margin: 0 25px 0 0;
   }
   .skills_container .skill_box p {
     border: solid 3px white;
