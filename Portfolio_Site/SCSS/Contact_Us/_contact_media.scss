@@ -1,0 +1,31 @@
+
+@media (min-width: 768px) {
+    .contact_container {
+        width: 700px;
+        margin: 50px auto;
+
+        #instagram_container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 50px;
+
+            .image_container {
+                width: 300px;
+                height: 100%;
+                margin: auto 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 993px) {
+    .contact_container {
+        width:  925px;
+    }
+}
+
+@media (min-width: 1278px) {
+    .contact_container {
+        width: 1210px;
+    }
+}

@@ -84,8 +84,8 @@ footer .footer_container {
           justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: space-between;
-          flex-direction: space-between;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 

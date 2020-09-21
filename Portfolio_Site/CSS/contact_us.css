@@ -1,0 +1,127 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: url(../Images/Greyscaled_Icons.png) no-repeat center center fixed, url(../Images/Background_Only_Colour.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body p, body a, body h2, body h3 {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  font-size: 3rem;
+  color: white;
+}
+
+body h2 {
+  width: 100%;
+  display: block;
+  text-transform: lowercase;
+  font-size: 8rem;
+  line-height: 8rem;
+  color: white;
+  text-align: center;
+}
+
+.contact_container {
+  margin: 50px 0;
+  width: auto;
+  padding: 0 25px;
+  text-align: center;
+}
+
+.contact_container h2 {
+  margin: 50px 0;
+}
+
+.contact_container p:nth-of-type(2) {
+  display: inline-block;
+  width: auto;
+}
+
+.contact_container a {
+  text-decoration: none;
+}
+
+.contact_container a:hover {
+  color: #32CD32;
+}
+
+.contact_container .instagram_link {
+  margin-top: 25px;
+  font-size: 8rem;
+  display: block;
+}
+
+.contact_container #instagram_container {
+  margin-top: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  row-gap: 25px;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+}
+
+.contact_container #instagram_container .image_container {
+  margin: 0;
+  padding: 0;
+  line-height: 0px;
+  border-radius: 25px;
+  width: auto;
+  border: 10px solid white;
+}
+
+.contact_container #instagram_container .image_container img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.contact_container #instagram_container .image_container:hover {
+  border-color: #32CD32;
+  background-color: #32CD32;
+}
+
+@media (min-width: 768px) {
+  .contact_container {
+    width: 700px;
+    margin: 50px auto;
+  }
+  .contact_container #instagram_container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  .contact_container #instagram_container .image_container {
+    width: 300px;
+    height: 100%;
+    margin: auto 0;
+  }
+}
+
+@media (min-width: 993px) {
+  .contact_container {
+    width: 925px;
+  }
+}
+
+@media (min-width: 1278px) {
+  .contact_container {
+    width: 1210px;
+  }
+}
