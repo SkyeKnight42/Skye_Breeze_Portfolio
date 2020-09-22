@@ -19,7 +19,7 @@ const imageURL = [
     "https://www.instagram.com/p/9gxouwDrNm/",
     "https://www.instagram.com/p/BbUSeOnj6Qw/",
     "https://www.instagram.com/p/BD_sktUDrNS/",
-    "https://www.instagram.com/p/B3rVGSODl4J/", //Graduation
+    "https://www.instagram.com/p/B3rVGSODl4J/", 
     "https://www.instagram.com/p/BihZyoRgT5F/",
     "https://www.instagram.com/p/BDO35XxjrFA/"
 ]

@@ -7,17 +7,13 @@
         margin: 0 auto;
 
         .about_content {
-            flex-wrap: nowrap;
 
             img {
-                width: 40%;
-                margin: 0 20px 0 0;
+                margin: 0 auto 25px;
             }
 
             p {
                 border: solid 3px white;
-                margin: auto 0;
-                width: 60%;
             }
         }
     }
@@ -38,9 +34,6 @@
     .about_container {
         width: 925px;
         .about_content {
-            p {
-                margin: auto 0;
-            }
 
             .card {
                 width: 450px
@@ -98,11 +91,6 @@
 
     .about_container {
         width: 1210px;
-        .about_content {
-            p {
-                width: 100%;
-            }
-        }
     }
 
     .skills_container {

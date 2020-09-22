@@ -67,6 +67,10 @@ body h2 {
   width: auto;
 }
 
+.skills_container h2 {
+  margin: 50px 0 0;
+}
+
 .skills_container .skill_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,7 +86,7 @@ body h2 {
 
 .skills_container .skill_box img {
   width: 200px;
-  margin: 0 auto;
+  margin: 40px auto 20px;
 }
 
 .skills_container .skill_box .adobe {
@@ -120,6 +124,10 @@ body h2 {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 25px;
+}
+
+.previous_work_container h2 {
+  margin: 50px auto 0;
 }
 
 .previous_work_container .card {
@@ -218,18 +226,11 @@ body h2 {
     width: 700px;
     margin: 0 auto;
   }
-  .about_container .about_content {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
   .about_container .about_content img {
-    width: 40%;
-    margin: 0 20px 0 0;
+    margin: 0 auto 25px;
   }
   .about_container .about_content p {
     border: solid 3px white;
-    margin: auto 0;
-    width: 60%;
   }
   .skills_container {
     width: 700px;
@@ -244,9 +245,6 @@ body h2 {
 @media (min-width: 993px) {
   .about_container {
     width: 925px;
-  }
-  .about_container .about_content p {
-    margin: auto 0;
   }
   .about_container .about_content .card {
     width: 450px;
@@ -308,9 +306,6 @@ body h2 {
   }
   .about_container {
     width: 1210px;
-  }
-  .about_container .about_content p {
-    width: 100%;
   }
   .skills_container {
     width: 1210px;

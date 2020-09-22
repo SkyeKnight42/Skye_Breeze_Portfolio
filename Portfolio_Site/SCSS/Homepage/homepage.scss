@@ -70,14 +70,18 @@ body {
     padding: 0 25px;
     width: auto;
 
+    h2 {
+        margin: 50px 0 0;
+    }
+
     .skill_box {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
+        
         img {
             width: 200px;
-            margin: 0 auto;
+            margin: 40px auto 20px;
         } 
 
         .adobe {
@@ -110,6 +114,10 @@ body {
     justify-content: center;
     padding: 25px;
 
+    h2 {
+        margin: 50px auto 0;
+    }
+    
     .card {
         border-radius: 20px;
         justify-content: center;
