@@ -12,7 +12,8 @@ html {
 }
 
 body {
-    background: url(../Images/Greyscaled_Icons.png) no-repeat center center fixed, url(../Images/Background_Only_Colour.png) no-repeat center center fixed ;
+    // background: url(../Images/Greyscaled_Icons.png) no-repeat center center fixed, url(../Images/Background_Only_Colour.png) no-repeat center center fixed ;
+    background: url(../Images/IMG_2982.jpg) no-repeat center center fixed;
     background-size: cover;
 
     p, a, h2, h3 {
@@ -41,19 +42,22 @@ body {
     h2 {
         margin: 50px 0;
     }
+
     .about_content {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         margin: 0;
         color: solid 1px green;
+
         img {
             width: 100%;
             max-width: 300px;
             margin: 0 auto 25px;
             height: 100%;
-            padding: 10px;
-            background-color: white;
+            border: solid 10px white;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
             border-radius: 50%;
         }
 

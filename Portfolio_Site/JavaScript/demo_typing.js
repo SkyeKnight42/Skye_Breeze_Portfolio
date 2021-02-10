@@ -3,24 +3,22 @@
 let text= document.getElementById('typing_effect')
 let textLength = text.textContent.length
 let button = document.getElementById('demo_button')
+let textcopy
 
-console.log(textLength)
-console.log(text.textContent.length)
-button.addEventListener('click', async () => {
+
+button.addEventListener('click', function() {
     if (text.textContent.length == textLength) {
-        let textcopy = text.textContent
+        textcopy = text.textContent
         text.innerHTML = ""
     
         for (let x = 0; x < textcopy.length; x++) {
-            text.innerHTML += textcopy.charAt(x)
-    
-            await sleep(50)
+            addLetter(x, textcopy.charAt(x))
         }
     }
 })
 
-// await sleep(50)
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms))
+function addLetter(_index, _letter) {
+    setTimeout(function() {
+        text.innerHTML += _letter
+    }, _index * 50)
 }

@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: url(../Images/Greyscaled_Icons.png) no-repeat center center fixed, url(../Images/Background_Only_Colour.png) no-repeat center center fixed;
+  background: url(../Images/IMG_2982.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -50,8 +50,7 @@ body h2 {
   max-width: 300px;
   margin: 0 auto 25px;
   height: 100%;
-  padding: 10px;
-  background-color: white;
+  border: solid 10px white;
   border-radius: 50%;
 }
 
